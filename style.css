@@ -77,16 +77,14 @@ body{
     background-color: rgba(139, 151, 15, 197);
 }
 div#bdy{
- width: 95.5%;
- height: 810px;
- background-color: white;
- border: 1px solid black;
- padding: 25px;
- position: relative;
+    width: 95.5%;
+    height: 810px;
+    background-color: white;
+    padding: 25px;
+    position: relative;
 }
 div#lefty{
     width: 65%;
-    border: 1px double black ;
     margin: 5px;
     padding: 10px;
     text-align: justify;
@@ -96,17 +94,19 @@ div#first > h3 {
     font-size: 42pt;
     font-family: 'Patrick Hand', cursive;
     line-height: 0px;
+    color: rgba(85, 104, 1, 235);
 }
 div#first > h3::before{
     content: "Welcome";
     color: red;
     font-size: 52pt;
     font-family: 'Patrick Hand', cursive;
-    margin-left: 5px;
+    margin-left: 30px;
 }
 div#first > p {
     line-height: 25px;
-    margin: 5px;
+    margin: 25px;
+    margin-left: 25px;
     padding: 5px;
 }
 
@@ -148,19 +148,99 @@ div#sec > h3 {
     font-size: 42pt;
     font-family: 'Patrick Hand', cursive;
     line-height: 0px;
+    color: rgba(85, 104, 1, 235);
 }
 div#sec > h3::before{
     content: "Recent";
     color: red;
     font-size: 52pt;
     font-family: 'Patrick Hand', cursive;
-    margin-left: 5px;
+    margin-left: 35px;
 }
 div#righty{
     width: 19%;
     height: 780px;
     right: 7.5%;
+    margin-top: 5px;
     position: absolute;
     box-shadow:3px 5px 3px 5px gray;
     border: 1px solid black;
+}
+div#righty > h3 {
+    font-size: 30pt;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 0px;
+    color: rgba(85, 104, 1, 235);
+    margin-left: 20px;
+}
+div#imgdiv{
+    width: 100%; 
+}
+div#imgdiv > img {
+    width: 80%;
+    height: 150px;
+    margin-left: 10.5%;
+}
+div#righty > p{
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    line-height: 25px;
+    text-align: justify;
+  }
+div#righty > ul {
+    line-height: 27px;
+    padding-top: 15px;
+}
+div#righty > ul> li{
+    list-style: square;
+    color: green;
+}
+div#righty > ul> li > a {
+    text-decoration: none;
+    color: black;
+}
+div#footer{
+    width: 98.8%;
+    height: 70px;
+    position: relative;
+}
+div#footer > ul{
+    width: 60% ;
+    height: 30px;
+    list-style: none;
+    float: left;
+    vertical-align: middle;
+}
+div#footer > ul > li{
+    margin-top:.5% ;
+    margin-left: .5%;
+    top: 20px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(85, 104, 1, 235);
+}
+div#footer > ul > li > a{
+    padding:  5px;
+    text-decoration: none;
+    color: white;
+}
+div#footer > ul > li::after {
+    content: "|";
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div#footer > ul > li > a:hover {
+    text-decoration: none;
+    background-color: rgba(181, 211, 5, 229);
+    top: 43%;
+}
+div#footer > p#copy{
+    width: 25%;
+    height:30%;
+    top: 7%;
+    right: 20%;
+    color: white;
+    position: absolute;
 }
