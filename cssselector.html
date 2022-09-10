@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div#des label{
+        color: blue;
+    }
+    div#child > label{
+        border: 1px solid black;
+        font-family: 'Courier New', Courier, monospace, cursive;
+    }
+    div#adj + label {
+        font-family: monospace;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <h3>descendant selector (space)</h3>
+    <!-- everything within the tag -->
+    <div id="des">
+        <label>This is descendant selector with label.</label>
+        <label>This is descendant selector with label.</label>
+       <p> <label>This is descendant selector within P .</label></p>
+    </div>
+
+    <h3>child selector (>)</h3>
+ <!-- only one descendant within the tag -->
+    <div id="child">
+        <label>This is descendant selector with label.</label>
+        <label>This is descendant selector with label.</label>
+       <p> <label>This is descendant selector within P .</label></p>
+       <label>This is descendant selector with label.</label>
+    </div>
+    <hr>
+
+    <h3>Adjacent Sibiling selector (+) </h3>
+    <!-- close descendant outside the tag -->
+    <style>
+     div#adj + label {
+        font-family: monospace;
+        font-size: 20px;
+    }
+    </style>
+    <div id="adj">
+        <label>This is son.</label>
+    </div>
+        <label>This is elder bother.</label>
+       <p> <label>This is friend .</label></p>
+       <label>This is younger sister</label>
+    
+    <hr>
+    <h3>General Sibling selector (~) </h3>
+    <!--every descendant of the used tag -->
+    <style>
+     div#general ~ label {
+        font-family: monospace;
+        font-size: 20px;
+        color: red;
+    }
+    </style>
+    <div id="general">
+        <label>This is son.</label>
+    </div>    
+        <label>This is elder bother.</label>
+       <p> <label>This is friend .</label></p>
+       <label>This is younger sister</label>
+    
+       <br>
+       <hr>
+       <h3>Pseudo Class</h3>
+       <style>
+        .google:active{color: green; text-decoration-color: brown;}
+        .youtube:hover{color: brown; text-decoration-color: green;}
+       </style>
+       <a href="www.google.com" class="google">Google</a>
+       <br>
+       <a href="www.youtube.com" class="youtube">Youtube</a>
+
+<hr>
+       <h3>Pseudo Element</h3>
+       <style>
+        .pseudo-element::first-letter{
+            color: white;
+            font-size: 30px;
+            font-family: cursive;
+            background-color: black;
+        }
+
+        .pseudo-element::first-line{
+            background-color: gray;
+        }
+
+        .pseudo-element::before{
+            content: "This is before text";
+            color: red;
+        }
+
+        .pseudo-element::after{
+            content: "this is before after";
+            color: blue;
+        }
+
+        .pseudo-element::first-sentence{
+            background-color: lightblue;
+        }
+        
+        
+       </style>
+       <p class="pseudo-element">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam pariatur dolor quod, deleniti voluptatum ipsum voluptates non dignissimos! Nemo blanditiis iusto quia placeat molestias facilis at nobis tempore. Reprehenderit, assumenda.
+       </p>
+
+       <hr>
+       <style>
+        li{
+            list-style: url(images/1.jpg);
+        }
+       </style>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+</body>
+</html>

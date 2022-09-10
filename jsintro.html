@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS Introduction</h2>
+    <p id="js">This is p text.</p>
+
+
+    <img src="images/apple.png" alt="" width="200px" height="200px" id="img"><br><br>
+    <button onclick="document.getElementById('img').src='images/apple.png'" >Original Image</button>
+
+    <button  onclick="document.getElementById('img').src='images/bae.png'">Change Image</button> <br><br>
+
+    Date of birth
+    <input type="text" name="" id="dob">
+    <button onclick="document.getElementById('dob').type='date'" >Change type</button>
+    <button onclick="document.getElementById('dob').style.backgroundColor='red'" >Change bg color</button>
+    <button onclick="document.getElementById('dob').style.color='white'" >Change color</button>
+    <br><br>
+
+    <font color="black" size="4" id="font">Font test</font>
+
+    <button onclick="document.getElementById('font').color='red'" >Change color</button>
+    <button onclick="document.getElementById('font').size='7'" >Change size</button><br><br>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi recusandae earum nam iure voluptas eaque sapiente cupiditate ab, natus architecto, corrupti est illum. Saepe, culpa architecto! Laborum quibusdam provident aliquid?</p>
+
+    <button onclick="document.getElementById('para').style.width='200px'" >Change width</button>
+    <button onclick="document.getElementById('para').style.padding='20px'" >Change padding</button>
+    <button onclick="document.getElementById('para').style.border='1px solid black'" >Change border</button>
+
+    <script>
+        
+        document.write('This is d_write.');
+        console.log('this is console');
+        document.getElementById('js').innerHTML = 'This is Js text';
+    </script>
+</body>
+</html>

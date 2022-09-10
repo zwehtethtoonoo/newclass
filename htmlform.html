@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <input type="text" list="data">
+            <datalist id="data">
+                <option value="Apple"></option>
+                <option value="Samsung"></option>
+                <option value="Ios"></option>
+                <option value="Andriod"></option>
+            </datalist>
+        <input type="button" value="Search">
+    
+    </div>
+    <form action="htmlform.html" method="get" >
+        <table align="center" width="30%" height="450px;">
+            <caption><h2>User Registeration</h2></caption>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="txtname" id="" placeholder="Mg Mg"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob" ></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="rdoGender"  value="Male" id="" checked>Male
+                     <input type="radio" name="rdoGender" value="Female"  id="">Female</td>
+            </tr>
+            <tr>
+                <td>Role</td>
+                <td><select name="slrole" id="">
+                        <option value="manager">Manager</option>
+                        <option value="assistant">Assistant</option>
+                        <option value="designer">Designer</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="txtemail" id="" required 
+                    oninvalid="this.setCustomValidity('Please add email.')"
+                    onchange="this.setCustomValidity('')"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="txtpassword" id=""></td>
+            </tr>
+            <tr>
+                <td>Profile</td>
+                <td><input type="file" ></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="checkbox" required 
+                    oninvalid="this.setCustomValidity('Please confirm the terms.')"
+                     onchange="this.setCustomValidity('')" name="cboterm"> Agree to Terms & Conditions</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="txtarea" cols="18" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Back"></td>
+                <td><input type="submit" name="BtnSubmit" value="Submit"></td>
+            </tr>
+
+
+        </table>
+    </form>
+
+    <p align="center;">&copy;CopyRighted ; &#174; Registered</p>
+</body>
+</html>
