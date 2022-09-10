@@ -1,24 +1,166 @@
-div
-{
+h2{
+    width: 300px;
+    font-size: 50pt;
+    position: absolute;
+    white-space: pre;
+    color: white;
+    display: inline-block;
     text-align: justify;
-    background-color: goldenrod;
-    font-size: 20px;
-    width: 50%;
+    vertical-align: top;
+    margin: 5px;
+    padding: 15px; 
+    top: 50px;
+    left: 100px;
+}
+div#moti{
+    position: absolute; 
+    display: inline-block;
+    top: 130px;
+    right: 200px;
+    width: 800px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 5px;
+    font-size: 14pt;
     font-family: monospace;
-    align-self: center;
-    align-content: center;
+    line-height: 30px;
 }
 
-#first 
-{
-    background-color: chocolate;
-    border: 4px dashed;
+nav{
+    width: 100%;
+    height: 350px;
+    padding: 10px 5px;
+    background-color: rgba(193, 200, 119, 102);
+    top: 0;
+    position: relative;
+}
+nav > div.menus{
+    width: 100%;
+    height: 73px;
+    background-color: rgba(85, 104, 1, 235);
+    margin-top: 200px;
+    position: absolute;
+    bottom: 1px;
+    
+}
+div.menus > a {
+    width: 150px;
+    height: 50px;
+    float: left;
+    top: 2px;
+    text-decoration: none;
+    color: gray;
+    padding-top: 20px; 
+    text-align: center;   
+    margin: 0px 65px 0px 50px;
+    font-size: 14pt;
+    font-family: cursive;
+
 }
 
-#sec
-{
-    background-color: lawngreen;
-    border-radius: 40px;
-    text-decoration:line-through ;
-    text-transform: uppercase;
+div.menus > a:hover {
+    color: white;
+    background-color: rgba(181, 211, 5, 229);
+    color-scheme: inherit;
+    border-radius: 5px;
+}
+
+
+hr.g{
+    margin-top: 15px;
+    color: green;
+    position: absolute;
+    z-index: 2;
+}
+body{
+    background-color: rgba(139, 151, 15, 197);
+}
+div#bdy{
+ width: 95.5%;
+ height: 810px;
+ background-color: white;
+ border: 1px solid black;
+ padding: 25px;
+ position: relative;
+}
+div#lefty{
+    width: 65%;
+    border: 1px double black ;
+    margin: 5px;
+    padding: 10px;
+    text-align: justify;
+    position: absolute;
+}
+div#first > h3 {
+    font-size: 42pt;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 0px;
+}
+div#first > h3::before{
+    content: "Welcome";
+    color: red;
+    font-size: 52pt;
+    font-family: 'Patrick Hand', cursive;
+    margin-left: 5px;
+}
+div#first > p {
+    line-height: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul > li {
+    text-align: left;
+    color: green;
+}
+p#plist{
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+
+div#box{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    margin: 5px;
+}
+div#box > a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 5px; 
+    border: 2px solid black; 
+    background-color: green;
+}
+hr.g{
+    float: left;
+    width: 93%;
+    top: 3;
+    color: rgba(85, 104, 1, 235);
+    size: 2px;
+    position: relative;
+}
+div#sec > h3 {
+    font-size: 42pt;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 0px;
+}
+div#sec > h3::before{
+    content: "Recent";
+    color: red;
+    font-size: 52pt;
+    font-family: 'Patrick Hand', cursive;
+    margin-left: 5px;
+}
+div#righty{
+    width: 19%;
+    height: 780px;
+    right: 7.5%;
+    position: absolute;
+    box-shadow:3px 5px 3px 5px gray;
+    border: 1px solid black;
 }

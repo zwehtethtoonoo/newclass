@@ -5,90 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    h2{
-        width: 300px;
-        font-size: 50pt;
-        position: absolute;
-        white-space: pre;
-        color: white;
-        display: inline-block;
-        text-align: justify;
-        vertical-align: top;
-        margin: 5px;
-        padding: 15px; 
-        top: 50px;
-        left: 100px;
-    }
-    div#moti{
-        position: absolute; 
-        display: inline-block;
-        top: 130px;
-        right: 200px;
-        width: 800px;
-        display: inline-block;
-        text-align: left;
-        vertical-align: top;
-        margin: 5px;
-        font-size: 14pt;
-        font-family: monospace;
-        line-height: 30px;
-    }
-
-    nav{
-        width: 100%;
-        height: 350px;
-        padding: 10px 5px;
-        background-color: rgba(193, 200, 119, 102);
-        top: 0;
-        position: relative;
-    }
-    nav > div.menus{
-        width: 100%;
-        height: 73px;
-        background-color: rgba(85, 104, 1, 235);
-        margin-top: 200px;
-        position: absolute;
-        bottom: 1px;
-        
-    }
-    div.menus > a {
-        width: 150px;
-        height: 50px;
-        float: left;
-        top: 2px;
-        text-decoration: none;
-        color: gray;
-        padding-top: 20px; 
-        text-align: center;   
-        margin: 0px 65px 0px 50px;
-        font-size: 14pt;
-        font-family: cursive;
-
-    }
-
-    div.menus > a:hover {
-        color: white;
-        background-color: rgba(181, 211, 5, 229);
-        color-scheme: inherit;
-        border-radius: 5px;
-    }
-
-
-    hr.g{
-        margin-top: 15px;
-        color: green;
-        position: absolute;
-        z-index: 2;
-    }
-
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <nav>
         <div>
+            <!-- h2 using white space.THEREFORE, DO NOT EDIT THE FOLLOWING H2 TAG !! -->
         <h2 >Your
 Company</h2>
         </div>
@@ -106,77 +32,43 @@ Company</h2>
         </div>    
     </nav>
 <br>
-<style>
-       div#boxx{
-        width: 1200px;
-        height: 50px;
-        position: relative;
-        background-color: gray;
-    }
-    div#boxx > a {
-        text-decoration: none;
-         color: white;
-         float: left;
-        padding: 5px; 
-        border: 2px solid black; 
-        background-color: green;
+<div id="bdy">  <!-- body -->
+    <div id="lefty">
+       <div id="first"> 
+        <h3> to our site</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi similique optio ab quod ducimus nemo velit, veniam rerum sint dolor vitae ipsam illo quia magnam aperiam a cupiditate assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quod, accusamus aliquam officia perspiciatis molestiae, quis aut incidunt provident, commodi obcaecati reiciendis amet aperiam veritatis deserunt repudiandae beatae porro eveniet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, excepturi neque. Vel amet repellat quia nulla in saepe odio officiis? Minima blanditiis tenetur rem consectetur doloremque temporibus nulla provident quidem.
+            </p>
+            <ul>
+                <li><p id="plist">Voluptates officiis harum soluta saepe magni tempore quae odit quis.</p> </li>
+                <li><p id="plist">Ipsam, omnis accusantium porro, neque voluptatem. Repudiandae voluptatem sint rem totam animi.</p></li>
+            </ul>
+        </div><!-- end of first div -->
 
-    }
+        <div id="box">
+            <hr class="g" align="left" >
+            <a href="">read more</a> 
+        </div><!-- end of hr div -->
+         
+        <div id="sec">
+            <h3> Articles</h3>
+            <ul>
+                <li><p id="plist">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos delectus illum, voluptates enim sunt nisi, recusandae odio quo iste autem deleniti commodi consequuntur doloremque! Nobis error pariatur autem magnam explicabo!</p></li>
+                <li><p id="plist">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam in, nihil harum cupiditate, quos ut exercitationem, reprehenderit deleniti modi maxime a facere magni. Consequuntur, aliquid perferendis aut dignissimos cum minima.</p></li>
+                <li><p id="plist">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, voluptate omnis minima odio accusantium molestias rem optio id fuga! Aspernatur corporis rem hic, consequatur assumenda provident mollitia ad? Commodi, doloremque?</p></li>
+            </ul>
+        </div><!-- end of sec div -->
 
-    hr.g{
-        float: left;
-        width: 1000px;
-        top: 3;
-        color: green;
-        size: 2px;
-        position: relative;
-    }
+        <div id="box">
+            <hr class="g" align="left" >
+            <a href="">read more</a> 
+        </div><!-- end of hr div -->
 
+    </div> <!-- end of lefty div -->
+    <div id="righty">
 
-
-</style>
-<div style="width: 100%; height: 1000px; background-color: gray;"></div>
-    <div id="boxx">
-        <hr class="g" align="left" >
-        <a href="">read more</a> 
     </div>
 
-<!--     /* div#box{
-        width: 100%;
-        height: 50px;
-        position: relative;
-        background-color: gray;
-    }
-    div#box > a {
-        text-decoration: none;
-         color: white;
-         float: right;
-        padding: 5px; 
-        border: 2px solid black; 
-        background-color: green;
-    } */
-    <style>
-        div#aaaa{
-    position: absolute;
-    right: 0;
-    top: -18px;
-    text-decoration: none;
-    padding: 4px 4px 4px 25px;
-} 
-div#aaaa > a {
-    text-decoration: none;
-    color: white;float: right;
-    padding: 5px; 
-    border: 2px solid black; 
-    background-color: green;
-}
+</div> <!-- end of body div -->
 
-
-    </style>
-    <div style="width: 800px; border: 1px solid black; position: relative; height: 40px; "
-     id="aaaa">
-        <hr style="width: 750px; border: 1px solid black;" align="left">
-        <a href="" >Read more</a>
-    </div> -->
 </body>
 </html>
